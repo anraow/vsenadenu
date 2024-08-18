@@ -1,0 +1,112 @@
+.brandCard {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px 40px;
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.brandInfo {
+    max-width: 50%;
+    text-align: left;
+}
+
+.brandLogo img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 16px;
+    object-fit: cover;
+}
+
+.brandName {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.aboutLabel {
+    font-size: 0.8em;
+    color: #AEAEAE;
+    margin-top: 20px;
+}
+
+.brandAbout {
+    font-size: 0.8em;
+}
+
+.itemsList {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  
+.itemsContainer {
+    text-align: left;
+    align-items: center;
+}
+
+.itemLink {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    width: auto;
+    max-width: 100%;
+    transition: transform 0.2s
+}
+
+/* Add styles for the item details */
+.item {
+    padding: 10px 20px;           /* Add padding */
+    border-radius: 10px;      /* Round corners */
+    display: inline-flex;              /* Make it a flex container */
+    flex-direction: column;     /* Align details vertically */
+    position: relative;
+    width: auto;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.itemDetailsRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.itemName {
+    background-color: #fff;
+    font-size: 1.1em;        /* Set font size for item name */
+    font-weight: 550;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin: 0;               /* Remove default margin */
+    margin-bottom: 10px;
+}
+
+.itemPrice {
+    background-color: #fff;
+    font-size: 1.1em;        /* Set font size for item name */
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin: 0;               /* Remove default margin */
+    margin-bottom: 10px;
+}
+
+.itemImagesContainer {
+    display: flex;             /* Display images in a line */
+    flex-wrap: nowrap;         /* Prevent wrapping */
+    gap: 10px;                  /* Add some space between images */
+    overflow-x: auto;          /* Handle overflow horizontally */
+}
+
+.itemImage {
+    height: 237px;           /* Set the height to 237px */
+    width: auto;             /* Auto adjust the width to maintain aspect ratio */
+    object-fit: cover;       /* Ensure the image covers the space without distortion */
+    flex-shrink: 0;
+    border-radius: 10px;
+}

@@ -1,0 +1,205 @@
+.itemDetailsContainer {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 0 9px rgba(0, 0, 0, 0.25);
+    overflow: hidden; /* Ensures the border-radius is applied correctly */
+}
+
+.itemDetailsContent {
+    display: flex;
+    flex-wrap: nowrap; /* Ensure items don't wrap */
+    align-items: stretch;
+}
+
+.itemImageContainer {
+    flex: 1 1 50%;
+    max-width: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.itemImage {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.imageCarousel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.carouselButton {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carouselButton:first-child {
+    left: 10px;
+}
+
+.carouselButton:last-child {
+    right: 10px;
+}
+
+.itemInfo {
+    flex: 1 1 50%;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Start items from the top */
+    padding: 20px 30px;
+}
+
+.itemInfoRow {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.itemDescription {
+    width: 60%;
+    text-align: left;
+}
+
+.itemName {
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.itemCaption {
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.itemPrice {
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.itemBrand {
+    font-size: 1em;
+    margin-bottom: 20px;
+    text-align: right;
+    text-decoration: none;
+    font-weight: 600;
+    color: #000;
+    transition: transform 0.2s;
+}
+
+.brandLink {
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+    transition: transform 0.2s;
+}
+
+.brandLink:hover {
+    text-decoration: underline;
+}
+
+.sizeContainer {
+    margin-top: 20px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.sizeTitle {
+    margin-bottom: 10px;
+}
+
+.sizeButtons {
+    display: flex;
+    gap: 10px;
+}
+
+.sizeButton {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sizeButton:hover {
+    background-color: #e0e0e0;
+}
+
+.sizeButton.selected {
+    background-color: #e0e0e0;
+    border-color: #000;
+}
+
+.message {
+    margin-top: 10px;
+    padding: 10px;
+    color: #aaaaaa; /* Adjust the color as needed */
+    background-color: #F4F4F4; /* Adjust the background color as needed */
+    border-radius: 5px;
+}
+
+.addToCartButton {
+    width: 100%;
+    background-color: #E6E6E6;
+    color: #464646;
+    border: 1px solid #D1D1D1;
+    padding: 15px 0;
+    margin-top: auto; /* Ensures the button is pushed to the bottom */
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+}
+
+.addToCartButton:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.addToCartButton:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Media query for responsive design */
+@media (max-width: 800px) {
+    .itemDetailsContent {
+        flex-direction: column;
+    }
+
+    .itemImageContainer, .itemInfo {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .itemImage {
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 0;
+    }
+}
