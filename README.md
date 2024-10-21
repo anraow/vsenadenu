@@ -27,5 +27,4 @@ This project is licensed under the MIT License - see the [LICENSE](./LICENSE) fi
 ## Contact
 
 For questions, feedback, or support, please contact us at:
-- **Email**: anraow@gmail.com
 - **Website**: [vsenadenu.ru](https://vsenadenu.ru)
